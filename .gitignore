@@ -1,0 +1,19 @@
+/*.launch
+/deployment/
+/packages/
+/releases/
+/.mendix-cache/
+/.classpath
+/.project
+/usi uc1 poc.mpr.bak
+/usi uc1 poc.mpr.lock
+/modeler-merge-marker
+/project-settings.user.json
+/javasource/*/proxies/
+/javasource/system/
+/**/node_modules/
+!/javascriptsource/**/node_modules/
+/nativemobile/builds/
+temp
+/usi_uc1_poc.mpr.bak
+/usi_uc1_poc.mpr.lock
