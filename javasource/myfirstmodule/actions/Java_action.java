@@ -26,7 +26,7 @@ public class Java_action extends CustomJavaAction<java.lang.Void>
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		String locVar = "world!";
+		String locVar = "world2!";
 		System.out.println(Parameter + " " + locVar);
 		return null;
 		// END USER CODE
