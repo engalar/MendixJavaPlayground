@@ -4,7 +4,7 @@
       "type": "java",
       "name": "Launch Mendix Program",
       "projectName": "MendixJavaPlayground",
-      "javaExec": "c:/Program Files/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin/javaw.exe",
+      "javaExec": "c:/Program Files/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin/java.exe",
       "request": "launch",
       "vmArgs": "-Djava.net.preferIPv4Stack=true -DMX_LOG_LEVEL=INFO \"-Djava.library.path=C:/Program Files/Mendix/9.24.2.6130/runtime/lib/x64;${workspaceFolder}/deployment/model/lib/userlib\" -Dfile.encoding=UTF-8 -Djava.io.tmpdir=\"${workspaceFolder}/deployment/data/tmp\"",
       "classPaths": [
