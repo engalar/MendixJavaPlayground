@@ -26,7 +26,9 @@ public class Java_action extends CustomJavaAction<java.lang.Void>
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
+		String locVar = "world!";
+		System.out.println(Parameter + " " + locVar);
+		return null;
 		// END USER CODE
 	}
 
