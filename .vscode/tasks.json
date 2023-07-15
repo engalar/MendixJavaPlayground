@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build_mx",
+      "type": "shell",
+      "command": "C:/Program Files/Mendix/9.24.2.6130/modeler/mxbuild.exe",
+      "args": [
+        "--java-home=c:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.16.101-hotspot",
+        "--java-exe-path=c:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin/java.exe",
+        "--target=deploy",
+        "--loose-version-check",
+        "${workspaceFolder}/USI_UC1_POC.mpr"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
