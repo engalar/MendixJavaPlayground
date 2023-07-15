@@ -10,7 +10,7 @@
         "--java-exe-path=c:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin/java.exe",
         "--target=deploy",
         "--loose-version-check",
-        "${workspaceFolder}/USI_UC1_POC.mpr"
+        "${workspaceFolder}/MendixJavaPlayground.mpr"
       ],
       "problemMatcher": [],
       "group": {
