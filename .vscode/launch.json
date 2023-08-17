@@ -24,7 +24,8 @@
         "MXCONSOLE_RUNTIME_PORT": 8080,
         "MXCONSOLE_SERVER_URL": "http://127.0.0.1:8090/"
       },
-      "args": "${workspaceFolder}/deployment"
+      "args": "${workspaceFolder}/deployment",
+      "postDebugTask": "killMendixConsoleLog"
     }
   ]
 }
