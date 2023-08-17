@@ -17,6 +17,20 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "killMendixConsoleLog",
+      "type": "shell",
+      "command": "taskkill",
+      "args": [
+        "/F",
+        "/IM",
+        "MendixConsoleLog.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
