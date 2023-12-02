@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Mendix Program",
+      "projectName": "$ProjectName$",
+      "javaExec": "$SystemDrive$/Program Files/Eclipse Adoptium/$JDK11Folder$/bin/java.exe",
+      "request": "launch",
+      "vmArgs": "-Djava.net.preferIPv4Stack=true -DMX_LOG_LEVEL=INFO \"-Djava.library.path=$SystemDrive$/Program Files/Mendix/$SpVersion$/runtime/lib/x64;${workspaceFolder}/deployment/model/lib/userlib\" -Dfile.encoding=UTF-8 -Djava.io.tmpdir=\"${workspaceFolder}/deployment/data/tmp\"",
+      "classPaths": [
+        "$SystemDrive$/Program Files/Mendix/$SpVersion$/runtime/launcher/runtimelauncher.jar"
+      ],
+      "cwd": "${workspaceFolder}/deployment",
+      "mainClass": "com.mendix.container.boot.Main",
+      "env": {
+        "M2EE_ADMIN_PASS": "1",
+        "MX_LOG_LEVEL": "v",
+        "M2EE_ADMIN_PORT": 8090,
+        "M2EE_CONSOLE_PATH": "$SystemDrive$/Program Files/Mendix/$SpVersion$/modeler/MendixConsoleLog.exe",
+        "MX_INSTALL_PATH": "$SystemDrive$/Program Files/Mendix/$SpVersion$",
+        "MXCONSOLE_BASE_PATH": "${workspaceFolder}/deployment",
+        "MXCONSOLE_RUNTIME_LISTEN_ADDRESSES": "*",
+        "MXCONSOLE_RUNTIME_PATH": "$SystemDrive$/Program Files/Mendix/$SpVersion$/runtime",
+        "MXCONSOLE_RUNTIME_PORT": 8080,
+        "MXCONSOLE_SERVER_URL": "http://127.0.0.1:8090/"
+      },
+      "args": "${workspaceFolder}/deployment",
+      "postDebugTask": "killMendixConsoleLog"
+    }
+  ]
+}
