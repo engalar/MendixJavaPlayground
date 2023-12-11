@@ -73,7 +73,7 @@ function EnsureTplExist {
     # Generate temporary keystore
     $keystoreParams = "-genkey -v -keystore $keystorePath -keyalg RSA -keysize 2048 -validity 10000 -alias temp -storepass mypass -keypass mypass -dname ""CN=Temp, OU=Temp, O=Temp, L=Temp, S=Temp, C=Temp"""
 
-    Start-Process -FilePath "$keytoolPath" -ArgumentList "$keystoreParams" -Wait -WorkingDirectory $originalLocation
+    Start-Process -FilePath "$keytoolPath" -ArgumentList "$keystoreParams" -Wait -WorkingDirectory $env:TPL_HOME\android\app
   }
 }
 
