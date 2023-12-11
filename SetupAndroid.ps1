@@ -1,8 +1,8 @@
 $env:TPL_HOME = "..\native-template-nengke"
 $env:TPL_VERSION = "v7.0.2"
 
-$env:KEYSTORE_PASSWORD=mypass
-$env:KEYSTORE_ALIAS=temp
+$env:KEYSTORE_PASSWORD="mypass"
+$env:KEYSTORE_ALIAS="temp"
 
 
 . .\SetupCommon.ps1
