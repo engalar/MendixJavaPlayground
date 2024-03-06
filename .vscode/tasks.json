@@ -4,10 +4,10 @@
     {
       "label": "build_mx",
       "type": "shell",
-      "command": "C:/Program Files/Mendix/9.24.2.6130/modeler/mxbuild.exe",
+      "command": "d:/Program Files/Mendix/9.24.12.20495/modeler/mxbuild.exe",
       "args": [
-        "--java-home=c:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.16.101-hotspot",
-        "--java-exe-path=c:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.16.101-hotspot/bin/java.exe",
+        "--java-home=d:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.20.8-hotspot",
+        "--java-exe-path=d:/\"Program Files\"/Eclipse Adoptium/jdk-11.0.20.8-hotspot/bin/java.exe",
         "--target=deploy",
         "--loose-version-check",
         "${workspaceFolder}/MendixJavaPlayground.mpr"
@@ -34,3 +34,5 @@
     }
   ]
 }
+
+
