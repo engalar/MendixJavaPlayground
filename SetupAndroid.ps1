@@ -1,8 +1,8 @@
 $env:TPL_HOME = "..\native-template-nengke"
 $env:TPL_VERSION = "v7.0.2"
 
-$env:KEYSTORE_PASSWORD=mypass
-$env:KEYSTORE_ALIAS=temp
+$env:KEYSTORE_PASSWORD="mypass"
+$env:KEYSTORE_ALIAS="temp"
 
 
 . .\SetupCommon.ps1
@@ -73,7 +73,7 @@ function EnsureTplExist {
     # Generate temporary keystore
     $keystoreParams = "-genkey -v -keystore $keystorePath -keyalg RSA -keysize 2048 -validity 10000 -alias temp -storepass mypass -keypass mypass -dname ""CN=Temp, OU=Temp, O=Temp, L=Temp, S=Temp, C=Temp"""
 
-    Start-Process -FilePath "$keytoolPath" -ArgumentList "$keystoreParams" -Wait -WorkingDirectory $originalLocation
+    Start-Process -FilePath "$keytoolPath" -ArgumentList "$keystoreParams" -Wait -WorkingDirectory $env:TPL_HOME\android\app
   }
 }
 
