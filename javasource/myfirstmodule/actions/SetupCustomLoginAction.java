@@ -14,16 +14,18 @@ import com.mendix.core.action.user.LoginAction;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.UserActionListener;
 import com.mendix.webui.CustomJavaAction;
-
 import myfirstmodule.implement.CustomLoginAction;
 
-public class SetupCustomLoginAction extends CustomJavaAction<java.lang.Void> {
-	public SetupCustomLoginAction(IContext context) {
+public class SetupCustomLoginAction extends CustomJavaAction<java.lang.Void>
+{
+	public SetupCustomLoginAction(IContext context)
+	{
 		super(context);
 	}
 
 	@java.lang.Override
-	public java.lang.Void executeAction() throws Exception {
+	public java.lang.Void executeAction() throws Exception
+	{
 		// BEGIN USER CODE
 		Core.addUserAction(CustomLoginAction.class);
 
@@ -42,11 +44,11 @@ public class SetupCustomLoginAction extends CustomJavaAction<java.lang.Void> {
 
 	/**
 	 * Returns a string representation of this action
-	 * 
 	 * @return a string representation of this action
 	 */
 	@java.lang.Override
-	public java.lang.String toString() {
+	public java.lang.String toString()
+	{
 		return "SetupCustomLoginAction";
 	}
 
