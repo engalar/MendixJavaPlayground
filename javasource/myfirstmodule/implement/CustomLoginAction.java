@@ -26,14 +26,20 @@ public class CustomLoginAction extends UserAction<ISession> {
   public ISession executeAction() throws Exception {
     // perform custom login steps using info received in param
     String userName = (String) params.get("userName");
-    if (userName.equals("wengao")) {
-      return Core.initializeSession(getOrCreateUser(userName), (String) params.get("currentSessionId"));
-    }
-    return null;
+    // if (userName.equals("wengao")) {
+      IUser user = getOrCreateUser(userName);
+      // String currentSessionId = (String) params.get("currentSessionId");
+      // var guestSession = Core.initializeGuestSession();
+      if (user == null) {
+        throw new RuntimeException("Assertion: user with username '" + userName + "' does not exist");
+      }
+      return Core.initializeSession(user, null);
+    // }
+    // return null;
   }
 
   private IUser getOrCreateUser(String userName) throws CoreException, InterruptedException, ExecutionException {
-    var context = getContext();
+    var context = getContext().createSudoClone();
     var userList = Core
         .createXPathQuery(String.format("//%s[%s = $value]", Account.entityName, Account.MemberNames.Name))
         .setAmount(1)
@@ -62,6 +68,7 @@ public class CustomLoginAction extends UserAction<ISession> {
     } else {
       account = Account.load(context, userList.get(0).getId());
     }
-    return Core.getUser(getContext(), userName);
+    String demoUserName = "demo_user";
+    return Core.getUser(context, userName);
   }
 }
