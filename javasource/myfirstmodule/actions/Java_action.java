@@ -14,12 +14,15 @@ import com.mendix.webui.CustomJavaAction;
 
 public class Java_action extends CustomJavaAction<java.lang.Void>
 {
-	private java.lang.String Parameter;
+	private final java.lang.String Parameter;
 
-	public Java_action(IContext context, java.lang.String Parameter)
+	public Java_action(
+		IContext context,
+		java.lang.String _parameter
+	)
 	{
 		super(context);
-		this.Parameter = Parameter;
+		this.Parameter = _parameter;
 	}
 
 	@java.lang.Override

@@ -11,25 +11,29 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import ap.otel.otel;
+import opentelemetry.implement.SpanManager;
 
 public class addEvent extends CustomJavaAction<java.lang.Void>
 {
-	private java.lang.String spanId_;
-	private java.lang.String event_;
+	private final java.lang.String spanId_;
+	private final java.lang.String event_;
 
-	public addEvent(IContext context, java.lang.String spanId_, java.lang.String event_)
+	public addEvent(
+		IContext context,
+		java.lang.String _spanId_,
+		java.lang.String _event_
+	)
 	{
 		super(context);
-		this.spanId_ = spanId_;
-		this.event_ = event_;
+		this.spanId_ = _spanId_;
+		this.event_ = _event_;
 	}
 
 	@java.lang.Override
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		otel.addEvent(spanId_, event_);
+		SpanManager.addEvent(spanId_, event_);
 		return null;
 		// END USER CODE
 	}

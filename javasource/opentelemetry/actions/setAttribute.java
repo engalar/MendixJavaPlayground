@@ -11,20 +11,25 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import ap.otel.otel;
+import opentelemetry.implement.SpanManager;
 
 public class setAttribute extends CustomJavaAction<java.lang.Void>
 {
-	private java.lang.String spanId_;
-	private java.lang.String attributeName_;
-	private java.lang.String attributeValue_;
+	private final java.lang.String spanId_;
+	private final java.lang.String attributeName_;
+	private final java.lang.String attributeValue_;
 
-	public setAttribute(IContext context, java.lang.String spanId_, java.lang.String attributeName_, java.lang.String attributeValue_)
+	public setAttribute(
+		IContext context,
+		java.lang.String _spanId_,
+		java.lang.String _attributeName_,
+		java.lang.String _attributeValue_
+	)
 	{
 		super(context);
-		this.spanId_ = spanId_;
-		this.attributeName_ = attributeName_;
-		this.attributeValue_ = attributeValue_;
+		this.spanId_ = _spanId_;
+		this.attributeName_ = _attributeName_;
+		this.attributeValue_ = _attributeValue_;
 	}
 
 	@java.lang.Override
@@ -32,7 +37,7 @@ public class setAttribute extends CustomJavaAction<java.lang.Void>
 	{
 		// BEGIN USER CODE
 		try {
-			otel.addAttribute(spanId_, attributeName_, attributeValue_);
+			SpanManager.setAttribute(spanId_, attributeName_, attributeValue_);
 		}
 		catch (Exception e) {
 			throw e;

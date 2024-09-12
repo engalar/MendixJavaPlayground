@@ -11,26 +11,30 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import ap.otel.otel;
+import opentelemetry.implement.SpanManager;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class recordException extends CustomJavaAction<java.lang.Void>
 {
-	private java.lang.String spanId_;
-	private IMendixObject Exception_;
+	private final java.lang.String spanId_;
+	private final IMendixObject Exception_;
 
-	public recordException(IContext context, java.lang.String spanId_, IMendixObject Exception_)
+	public recordException(
+		IContext context,
+		java.lang.String _spanId_,
+		IMendixObject _exception_
+	)
 	{
 		super(context);
-		this.spanId_ = spanId_;
-		this.Exception_ = Exception_;
+		this.spanId_ = _spanId_;
+		this.Exception_ = _exception_;
 	}
 
 	@java.lang.Override
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		otel.recordException(spanId_, Exception_.toString());
+		SpanManager.recordException(spanId_, Exception_.toString());
 		return null;
 		// END USER CODE
 	}

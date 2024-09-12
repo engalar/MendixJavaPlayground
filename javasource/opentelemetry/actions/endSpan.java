@@ -11,41 +11,46 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import ap.otel.otel;
+import io.opentelemetry.api.trace.StatusCode;
+import opentelemetry.implement.SpanManager;
 
 public class endSpan extends CustomJavaAction<java.lang.Void>
 {
-	private java.lang.String spanId_;
-	private opentelemetry.proxies.SpanStatus status_;
+	private final java.lang.String spanId_;
+	private final opentelemetry.proxies.SpanStatus status_;
 
-	public endSpan(IContext context, java.lang.String spanId_, java.lang.String status_)
+	public endSpan(
+		IContext context,
+		java.lang.String _spanId_,
+		java.lang.String _status_
+	)
 	{
 		super(context);
-		this.spanId_ = spanId_;
-		this.status_ = status_ == null ? null : opentelemetry.proxies.SpanStatus.valueOf(status_);
+		this.spanId_ = _spanId_;
+		this.status_ = _status_ == null ? null : opentelemetry.proxies.SpanStatus.valueOf(_status_);
 	}
 
 	@java.lang.Override
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		int success = 0;
+		StatusCode success = StatusCode.UNSET;
 		if (this.status_ != null) {
 			switch (status_) {
 			case Success :
-				success = 1;
+				success = StatusCode.OK;
 				break;
 			case Error:
-				success = 2;
+				success = StatusCode.ERROR;
 				break;
 			default: 
-				success = 0;
+				success = StatusCode.UNSET;
 				break;
 			}
-			otel.endSpan(spanId_, success);
+			SpanManager.endSpan(spanId_, success);
 		}
 		else {
-			otel.endSpan(spanId_);
+			SpanManager.endSpan(spanId_, StatusCode.UNSET);
 		}
 		return null;
 		

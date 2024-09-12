@@ -11,18 +11,23 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import ap.otel.otel;
+import io.opentelemetry.api.trace.Span;
+import opentelemetry.implement.SpanManager;
 
 public class createSpan extends CustomJavaAction<java.lang.String>
 {
-	private java.lang.String name_;
-	private java.lang.String parentSpanId_;
+	private final java.lang.String name_;
+	private final java.lang.String parentSpanId_;
 
-	public createSpan(IContext context, java.lang.String name_, java.lang.String parentSpanId_)
+	public createSpan(
+		IContext context,
+		java.lang.String _name_,
+		java.lang.String _parentSpanId_
+	)
 	{
 		super(context);
-		this.name_ = name_;
-		this.parentSpanId_ = parentSpanId_;
+		this.name_ = _name_;
+		this.parentSpanId_ = _parentSpanId_;
 	}
 
 	@java.lang.Override
@@ -39,10 +44,10 @@ public class createSpan extends CustomJavaAction<java.lang.String>
 		}
 		
 		if (parentSpanId_ != null) {
-			spanId = otel.createSpan(mfName, parentSpanId_);
+			spanId = SpanManager.createSpan(mfName, parentSpanId_);
 		}
 		else {
-			spanId = otel.createSpan(mfName);
+			spanId = SpanManager.createSpan(mfName, null);
 		}
 		if (spanId == null) {
 			throw new Exception("Could not create span"); 
