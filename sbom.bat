@@ -1,0 +1,1 @@
+"d:/Program Files/Mendix/10.12.1.39914/modeler/mxbuild.exe" --java-home="d:/Program Files/Java/jdk-17.0.2" --java-exe-path="d:/Program Files/Java/jdk-17.0.2/bin/java.exe" --generate-sbom MendixJavaPlayground.mpr

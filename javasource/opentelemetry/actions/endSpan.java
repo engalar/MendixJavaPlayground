@@ -11,7 +11,7 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import io.opentelemetry.api.trace.StatusCode;
+import io.opentelemetry.javaagent.shaded.io.opentelemetry.api.trace.StatusCode;
 import opentelemetry.implement.SpanManager;
 
 public class endSpan extends CustomJavaAction<java.lang.Void>

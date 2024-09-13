@@ -11,7 +11,6 @@ package opentelemetry.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import io.opentelemetry.api.trace.Span;
 import opentelemetry.implement.SpanManager;
 
 public class createSpan extends CustomJavaAction<java.lang.String>

@@ -81,7 +81,7 @@ run {
 
     // 设置环境变量
     environment(environmentVars)
-    executable("D:/Program Files/Eclipse Adoptium/jdk-11.0.20.8-hotspot/bin/java.exe")
+    executable("D:/Program Files/Java/jdk-17.0.2/bin/java.exe")
 }
 
 

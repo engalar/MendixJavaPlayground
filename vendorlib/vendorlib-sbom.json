@@ -21,42 +21,42 @@
   },
   "components" : [
     {
-      "group" : "org.jetbrains.kotlin",
-      "name" : "kotlin-stdlib",
-      "version" : "1.9.10",
-      "description" : "Kotlin Standard Library for JVM",
+      "group" : "com.googlecode.owasp-java-html-sanitizer",
+      "name" : "owasp-java-html-sanitizer",
+      "version" : "20211018.2",
+      "description" : "Takes third-party HTML and produces HTML that is safe to embed in your web application. Fast and easy to configure.",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "da8348128b101f854fafa9a31e3806bd"
+          "content" : "5b0008f2b94e1d3100de8d3cdcb670cb"
         },
         {
           "alg" : "SHA-1",
-          "content" : "72812e8a368917ab5c0a5081b56915ffdfec93b7"
+          "content" : "a3226c13cf72633122e94810a53e60529dae2b80"
         },
         {
           "alg" : "SHA-256",
-          "content" : "55e989c512b80907799f854309f3bc7782c5b3d13932442d0379d5c472711504"
+          "content" : "48234cd74e35d91a31a683820a35b5b6d11b55527f32a5b162c6757408b95d7a"
         },
         {
           "alg" : "SHA-512",
-          "content" : "6eab000f55dd196a074d1d97df9d285bccace31f0cae8db1846b1c9a55a6ea5e401307a95922a1d758b4152916de47fe36d31551ad0250918e6e07ce710a83a2"
+          "content" : "2aa772e369e93ae10fff441e063f0439ab36d87803dfcd76b492dbe61848c2b976649a921b9518c6dff9e8751dc9bff0802e1ef793d8cdb232f8e0da77e34732"
         },
         {
           "alg" : "SHA-384",
-          "content" : "5f34959bd398c5e6c15d8caa21068b337b851fdd8ae7ebc915853909d71d3fedd2e6542e63730c5199cbcc03b48f5e81"
+          "content" : "0caedafcf42e8a2e6a7a10665f48c9ae5cdbb586bbd5337bd63600a91362ec329c12558ce4d967f42ea7d7c83769e69f"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "afea5f6f39a136a859d8f3d1ae5ee1e8cf7356b4069b0a41f77069a7d001f0ba402c666286296a0c609fca25b277d210"
+          "content" : "aae645eb112a6d5bce213a766a6cf76df828545df07438340b007e9eb8db546e62b2a01d94385daea86bfb7b1952c34a"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "2d7bd20511dd96069425e81bdb03573bca1f9e0a4b95bc64d061c349db84cb4d"
+          "content" : "c805dca696ff5b10f8c21fca1e99c0771d3778507888ab7da4aa939a6c770e61"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "c45aa810f250916e3839de5cb1cff99cd482cf6c693540842be9f8e18aa6c238271da00e2af85897687c29d3795a810404780050539cfa24fa82da27eb8c3a1f"
+          "content" : "851caf550ca3f5cf9ff38c0961d18c60e752df41b6a8a28a8c856ea8e421cc9de7090155f688cffc889b576aa4ff0558b1138b1810ed25b135c1f68509c8be7f"
         }
       ],
       "licenses" : [
@@ -66,118 +66,71 @@
           }
         }
       ],
-      "purl" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.9.10?type=jar",
+      "purl" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar"
+    },
+    {
+      "group" : "org.apache.commons",
+      "name" : "commons-lang3",
+      "version" : "3.12.0",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "19fe50567358922bdad277959ea69545"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d919d904486c037f8d193412da0c92e22a9fa24230b9d67a57855c5c31c7e94e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fbdbc0943cb3498b0148e86a39b773f97c8e6013740f72dbc727faeabea402073e2cc8c4d68198e5fc6b08a13b7700236292e99d4785f2c9989f2e5fac11fd81"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c34b8a0e0eba2168ad56fedeb7a1d710b6f1d3f1ce6aae99a4e0247bd120efbbadc8dcb2f731045b8a16e3efd30604dc"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8ad6ebe7754bf0caa8cda7e59c0e95360d76e06a7ad6aeec5637985519dbd1dd06e7eed04711039f36ec4c49de280def"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "18ef639b2aeeb5aedffb18dbf20c79f33e300d99fb31b131689639cc470e6e4c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "fbea96114dcf4f31cfaaa99987be756ddda3a6c74f8c835461997df794d54b92da1f60fe5c3f1f2a43cb8c5f5db7f4048bef77c70993673c7a93f3660fffc8da"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
       "modified" : false,
       "externalReferences" : [
         {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LANG"
+        },
+        {
           "type" : "vcs",
-          "url" : "https://github.com/JetBrains/kotlin"
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
         }
       ],
       "type" : "library",
-      "bom-ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.9.10?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-extension-autoconfigure-spi",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK Auto-configuration SPI",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "ed2b30993f7c8dc571cf498870e5305e"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "4a51e8ebed2e8948af761f7d6bf69048f674d5ac"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "5a3bc2619fa50f176c21abf08ecfa98dd8e8980f154cca2b74a0a74e7d1cf473"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "77dc1459af57c0ede64feedce49fecd19b7fd8baf334f920ccd0b44f74fa21465f46ba0ec9eb3dfc1db896cd41387820a5795f79a09a8610fc3d8f303dbab87e"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "dc3e117d8b8f4b7bfb397d4d500356520caacc7392be65a0b65dc17f9be78f4d2b6c3f93a351044e8a7b9c2ab951bf40"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "15a5e231c6ff1b63616b952ee54eb3fef72efb4873fa76a91184eddc5460f1b4fae10a9011f4370cf9068ec033a03cd5"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "933ff6763a08f563d1e39ccd8f199234172353b3c4593fb5782b619916d0d671"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "c852df0ed8e31e70ec231d8986cb46069f439489801cae78e206dd452d4122b93aaf9cffaa491bfad5f48cbcc2f0788e5b27cc8f30bee47b73eb8d28488de286"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar"
-    },
-    {
-      "group" : "com.google.j2objc",
-      "name" : "j2objc-annotations",
-      "version" : "2.8",
-      "description" : "A set of annotations that provide additional information to the J2ObjC translator to modify the result of translation.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "c50af69b704dc91050efb98e0dff66d1"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "c85270e307e7b822f1086b93689124b89768e273"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "f02a95fa1a5e95edb3ed859fd0fb7df709d121a35290eff8b74dce2ab7f4d6ed"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "f8263868a792b41707c9e7fe6fa5650a14cd93fbeafad20efe3772a3058fc933eb59782ec59e6eb9b9c569aa96da80134ae9fdf7547b69c44a97087efddceeff"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "e6087ec31fec8289158496ad2ed6ce8472d5d513808a312e0782cedac3b86c37a62a63c0b5ea3839491d109fe9e148a1"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "10add34bfeb8612283eef89ac96747a3c9b755acd80ad526e1addaeb7efd6323c52b9bfa1a3d34adb40e1ccb963ee65d"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "b3336f8abd6b1f73b9f06d306974557000a000073bfbae6b54fda26d17dbb072"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "d376c184a6df071c4e93b913d175b5c2e63deac37105dc20342c19bdda62e4e9598ca1e8bfb4f4fd5cdee6dd5ac3b8af49e2c5193e324d59a59ce1f7adeab627"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar"
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar"
     },
     {
       "group" : "org.apache.pdfbox",
@@ -229,277 +182,6 @@
       "modified" : false,
       "type" : "library",
       "bom-ref" : "pkg:maven/org.apache.pdfbox/pdfbox@2.0.30?type=jar"
-    },
-    {
-      "group" : "org.jetbrains.kotlin",
-      "name" : "kotlin-stdlib-common",
-      "version" : "1.9.10",
-      "description" : "Kotlin Common Standard Library",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "de4024a53c843e959f2d50ecd1f0e951"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "dafaf2c27f27c09220cee312df10917d9a5d97ce"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "cde3341ba18a2ba262b0b7cf6c55b20c90e8d434e42c9a13e6a3f770db965a88"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "e7166112e27edcbc1fb7b918bf66120b35f82311016f944472ebc23c848b81d7016660d5d1a3e7a1679e599c555d796d73c520a0d8178e00b36aa3668415170e"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "f2d3a3c33cc3d9f2c554b1afce255b885fc7914fe13ef316d743d9300e4231556250fd691306f4feae356e8f21c4f777"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "48ee306c706fe0579610e5105cd9688a25dd9f964ad1ba47b5da25f1e9dc686fb6e4703b5950cdfca28d33ad92e7817e"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "e6788f12612e7ba42187b1f8ad6a9fd316c2ef91ca917dca8093fe5696094b54"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "628d660c681fdcc2750a47b131a046409997b95cb2417f9ebcd69946fa678c6e15f1079008f9be6b7d356a0d6e9b6b27bcb6fd01cd5d0c47fc583690c081f6b9"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.9.10?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/JetBrains/kotlin"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.9.10?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-trace",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK For Tracing",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "137aef0a87940b633af820a95ace8801"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "121a75c2ba9ed8b80f5ff131c2411a5d460f38d0"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "973b2d7b70cdd7a6ac122b1e2e7a756f18840b6bfddccb3710f59d5c18ec7b6c"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "e2847ed5451228866a5491f13c208ff2cad60797d787c4bf95c892f91acd5f2bc239bf824351cdc69dc01cdf6d4b06c88660a8acce5c72acdf4e2299a8ca25f6"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "2fca9d83d62e9e8db1acf3d96beea6cb65dcf608fe070b3100886308ab0c2aab111c80240e3dda63956e509fb67cbab1"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "4bd8b281e1b161ec282675e0fbb1d16648f46044498bb502d166777b91d101cb8d8dcdb825fcd9e2f28e786aedc4458a"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "14088b1d2df17d7b4c826e6ca4584bf489a4caf2e2d3b9af411cdaa019969b96"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "30a9eff2ee02fe6ffd58569f6598cefcbc11170c5f3e1f9af873cca88970eaf938cb9a3388529b0f7089292b8a0a95dbd81fa38fa4b497b2ec86df6b17bfdf92"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-logs",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry Log SDK",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "9e84ba9956cf8f9eca70c244b54218c4"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "abad9abc80dfe6118a60413afa161696bbf8dd43"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "0bf40a630aa4115fd549fdd7dcf77eb1f6c079e0d02ab0d81a415d5fb0848f35"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "a4f2b33359af074168e5cc374a3153894c9a02b2b272ff6d7f70a2cec8106cd645562050d07eba93e9127c172b8cd6c54d3645ea805d893e4a6a4f4eb7d9a3a7"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "686cf354c918f90d2aa7f558e24b96df8bfb95ebcc3343c45faba226ddcc6083d565881b6b434c1b6cf93864df0887a2"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "7dd9bfb8e726fbb9d39df3789b94908e065e24e2895ffa123cd66ba22c164315ab1845c8f9c3193243999dcb24936458"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "3cef37eb8032e01532ec7815482c41abc44c0de1c23db41294df3e2bc6db0f28"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "1239efde6c4c52174e28487328d482c45ce65a6d68bc87b20201314d4810e9098bc84c64b71febb105d5e997c73c376e5295b8aaeba203540f3729fe75cd18ff"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.34.1?type=jar"
-    },
-    {
-      "group" : "commons-logging",
-      "name" : "commons-logging",
-      "version" : "1.2",
-      "description" : "Apache Commons Logging is a thin adapter allowing configurable bridging to other, well known logging systems.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "040b4b4d8eac886f6b4a2a3bd2f31b00"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "4bfc12adfe4842bf07b657f0369c4cb522955686"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "ed00dbfabd9ae00efa26dd400983601d076fe36408b7d6520084b447e5d1fa527ce65bd6afdcb58506c3a808323d28e88f26cb99c6f5db9ff64f6525ecdfa557"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "ac20720d7156131478205f1b454395abf84cfc8da2f163301af32f63bd3c4764bd26cb54ed53800f33193ae591f3ce9c"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "628eb4407e95dca84da1a06b08a6d9b832a49de8472b1b217e8607f08efeeed18b996232d64dd07f03e78e0e3bb4b078"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "9aab62deccf156ee6e324c925dfc30ecb53e8465802863a551901a461424e807"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "3fd76857f6d20c03799537cc961c1c4ddf1c375c6c192fb982363e3b9397ba138b77f24ef38b4202f44e37586789c0320e4de18fdadd2772304fd14a9b26d552"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "issue-tracker",
-          "url" : "http://issues.apache.org/jira/browse/LOGGING"
-        },
-        {
-          "type" : "vcs",
-          "url" : "http://svn.apache.org/repos/asf/commons/proper/logging/trunk"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
-    },
-    {
-      "group" : "com.googlecode.owasp-java-html-sanitizer",
-      "name" : "owasp-java-html-sanitizer",
-      "version" : "20211018.2",
-      "description" : "Takes third-party HTML and produces HTML that is safe to embed in your web application. Fast and easy to configure.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "5b0008f2b94e1d3100de8d3cdcb670cb"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "a3226c13cf72633122e94810a53e60529dae2b80"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "48234cd74e35d91a31a683820a35b5b6d11b55527f32a5b162c6757408b95d7a"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "2aa772e369e93ae10fff441e063f0439ab36d87803dfcd76b492dbe61848c2b976649a921b9518c6dff9e8751dc9bff0802e1ef793d8cdb232f8e0da77e34732"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "0caedafcf42e8a2e6a7a10665f48c9ae5cdbb586bbd5337bd63600a91362ec329c12558ce4d967f42ea7d7c83769e69f"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "aae645eb112a6d5bce213a766a6cf76df828545df07438340b007e9eb8db546e62b2a01d94385daea86bfb7b1952c34a"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "c805dca696ff5b10f8c21fca1e99c0771d3778507888ab7da4aa939a6c770e61"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "851caf550ca3f5cf9ff38c0961d18c60e752df41b6a8a28a8c856ea8e421cc9de7090155f688cffc889b576aa4ff0558b1138b1810ed25b135c1f68509c8be7f"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar"
     },
     {
       "group" : "com.google.code.findbugs",
@@ -559,42 +241,93 @@
       "bom-ref" : "pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar"
     },
     {
+      "group" : "com.google.j2objc",
+      "name" : "j2objc-annotations",
+      "version" : "2.8",
+      "description" : "A set of annotations that provide additional information to the J2ObjC translator to modify the result of translation.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "c50af69b704dc91050efb98e0dff66d1"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c85270e307e7b822f1086b93689124b89768e273"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "f02a95fa1a5e95edb3ed859fd0fb7df709d121a35290eff8b74dce2ab7f4d6ed"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f8263868a792b41707c9e7fe6fa5650a14cd93fbeafad20efe3772a3058fc933eb59782ec59e6eb9b9c569aa96da80134ae9fdf7547b69c44a97087efddceeff"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e6087ec31fec8289158496ad2ed6ce8472d5d513808a312e0782cedac3b86c37a62a63c0b5ea3839491d109fe9e148a1"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "10add34bfeb8612283eef89ac96747a3c9b755acd80ad526e1addaeb7efd6323c52b9bfa1a3d34adb40e1ccb963ee65d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b3336f8abd6b1f73b9f06d306974557000a000073bfbae6b54fda26d17dbb072"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d376c184a6df071c4e93b913d175b5c2e63deac37105dc20342c19bdda62e4e9598ca1e8bfb4f4fd5cdee6dd5ac3b8af49e2c5193e324d59a59ce1f7adeab627"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar"
+    },
+    {
       "group" : "com.google.guava",
-      "name" : "failureaccess",
-      "version" : "1.0.1",
-      "description" : "Contains com.google.common.util.concurrent.internal.InternalFutureFailureAccess and InternalFutures. Most users will never need to use this artifact. Its classes is conceptually a part of Guava, but they're in this separate artifact so that Android libraries can use them without pulling in all of Guava (just as they can use ListenableFuture by depending on the listenablefuture artifact).",
+      "name" : "listenablefuture",
+      "version" : "9999.0-empty-to-avoid-conflict-with-guava",
+      "description" : "An empty artifact that Guava depends on to signal that it is providing ListenableFuture -- but is also available in a second \"version\" that contains com.google.common.util.concurrent.ListenableFuture class, without any other Guava classes. The idea is: - If users want only ListenableFuture, they depend on listenablefuture-1.0. - If users want all of Guava, they depend on guava, which, as of Guava 27.0, depends on listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The 9999.0-... version number is enough for some build systems (notably, Gradle) to select that empty artifact over the \"real\" listenablefuture-1.0 -- avoiding a conflict with the copy of ListenableFuture in guava itself. If users are using an older version of Guava or a build system other than Gradle, they may see class conflicts. If so, they can solve them by manually excluding the listenablefuture artifact or manually forcing their build systems to use 9999.0-....",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "091883993ef5bfa91da01dcc8fc52236"
+          "content" : "d094c22570d65e132c19cea5d352e381"
         },
         {
           "alg" : "SHA-1",
-          "content" : "1dcf1de382a0bf95a3d8b0849546c88bac1292c9"
+          "content" : "b421526c5f297295adef1c886e5246c39d4ac629"
         },
         {
           "alg" : "SHA-256",
-          "content" : "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26"
+          "content" : "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
         },
         {
           "alg" : "SHA-512",
-          "content" : "f8d59b808d6ba617252305b66d5590937da9b2b843d492d06b8d0b1b1f397e39f360d5817707797b979a5bf20bf21987b35333e7a15c44ed7401fea2d2119cae"
+          "content" : "c5987a979174cbacae2e78b319f080420cc71bcdbcf7893745731eeb93c23ed13bff8d4599441f373f3a246023d33df03e882de3015ee932a74a774afdd0782f"
         },
         {
           "alg" : "SHA-384",
-          "content" : "67659dbd9647ec303d7f15128dc9dba19b98fd8d74758ee3b602451e32c855e236ccaafe08edf4bbfa245f981268440f"
+          "content" : "caff9b74079f95832ca7f6029346b34b606051cc8c5a4389fac263511d277ada0c55f28b0d43011055b268c6eb7184d5"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "1460875f0331c5fa3791772a6a322a7db180261bc2adacf7271df1fbf3b088a587a755a604c039982cb593c5cfc1f101"
+          "content" : "e939f08df0545847ea0d3e4b04a114b08499ad069ba8ec9461d1779f87a56e0c37273630a0f4c14e78c348d3ac7eb97f"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "ea86406e75fcd93eafe3cde1b3135ba485f1bb9b75fed98894a0bf1f0aee04f0"
+          "content" : "1f0a8b1177773b3a8ace839df5eed63cbf56b24a38714898a6e4ed065c42559f"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "52ac0f487ab5dd27c9f2e54fd1d84c7a620cae9d49be4072aa2b11501787bf4391ddaa13d02eccdf19e8eea46aecbea5f6064b26777c1b836108a280652e04ac"
+          "content" : "6b495ecc2a18b17365cb08d124a0da47f04bcdde81927b5245edf3edd8e498c3c3fb92ce6a4127f660bac851bb1d3e4510e5c20d03be47ce99dc296d360db285"
         }
       ],
       "licenses" : [
@@ -604,48 +337,48 @@
           }
         }
       ],
-      "purl" : "pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar",
+      "purl" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar",
       "modified" : false,
       "type" : "library",
-      "bom-ref" : "pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar"
+      "bom-ref" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar"
     },
     {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-exporter-common",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry Exporter Common",
+      "group" : "org.apache.pdfbox",
+      "name" : "fontbox",
+      "version" : "2.0.30",
+      "description" : "The Apache FontBox library is an open source Java tool to obtain low level information from font files. FontBox is a subproject of Apache PDFBox.",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "2b9c5eeadc21a5b978811fb45f119aec"
+          "content" : "3a7b597c9dbd56e18455e6efca52cbb3"
         },
         {
           "alg" : "SHA-1",
-          "content" : "19c9a3f52851a1333b648ed83c82d16eb4c64afd"
+          "content" : "555e5d59a4d83c95c4330f018a6c32861880b6df"
         },
         {
           "alg" : "SHA-256",
-          "content" : "73bb11e64d4bbcee10723fabc4374db5cdb5ce8bb7542173069f4bf960093d70"
+          "content" : "aae7518f9c17d347531e63b22a46de582cb78f7e45d079a78a79dc9bdb23f8ba"
         },
         {
           "alg" : "SHA-512",
-          "content" : "0e9164658b9aadac4683931f5071d3942aa10ca40efe2d9194f63545c76f9e46b3db99fc1a5000316d55e3469c0dbf20d1d57ce12f296acd1647757dfa91d666"
+          "content" : "61eb46fee25826a8b0750fbe3823504e043f7e809f6ac3d144a1ba773195de29ebcffe30faee1bc9d2db50c94c45ebf65b67eb19e3358dbabf7878d36f133396"
         },
         {
           "alg" : "SHA-384",
-          "content" : "3eb680a09833ea2823c442dedf33aec983a7e7401b5b25f03c677938c684f19086a5928b8350b0ce4d85a9320c972588"
+          "content" : "ca4ccf8281e1b481f83b8e156a3c2cfab0590f3d0a0a19f9cf80997966170affb01da293bacb880ae70ff8e6f54deb0e"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "ac1a1380e1eb47e9e5fbfca19bca4eeddfd661c74fdba871806b13f52261cb3c073c9195962fb980034a16acf032d810"
+          "content" : "184a9a72f221f34fb98b9d5e132b74b18bab569b8f6e86a5e1e7b88e5d6f82095607809e2cd98620f43cdbd3efd0b277"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "eed029f7c7f56c8002f16540861ea50f09d8d1555f656bbc9ad6637df222b940"
+          "content" : "1c1333b59673e8caf3db1fc6453ce9c799b133faaee9017c2860a03257107325"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "bbe4f8ee47af472ad6000cf895e3330df3257d1ac4e5c31964d5985415ff0ec3cebe6e133f37f13e54afd64555c28a74f40d5a029f6f4b864f8e2d56a0918d57"
+          "content" : "4b018c517e51185debe39adc9237728b6a189cbfc8053bc8401fa2c115f2a40c1e242b5ce1ebf0339480bc332bd4681e9a3dcbb1c4c5bc8d7fca16f202e3ef5b"
         }
       ],
       "licenses" : [
@@ -655,214 +388,10 @@
           }
         }
       ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-common@1.34.1?type=jar",
+      "purl" : "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar",
       "modified" : false,
       "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-common@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-api",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry API",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "b14cb7cd1fb5621bd9daa199b01f8135"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "b4aea155f6d6b1032eba85378564431cfd86f562"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "3820fbe846e9f3cad55f0fe1ba72467da9343d1a14cc7a7bd536d4040ab17df9"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "fdbfe8f7cef3a56be485b421a4f9f42664a5cd7fb9bf6a43f8438868bbcec75f5fe4ea72c7c8da4978326c1492ea2036f471522c69ab86d617715a0b9767e8bb"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "1060691b3b7bf090bbea2d7c8f22bc1418ab853e6b27dbc9d00f85966601b6f43b5be0f65d14caabb389563f43d9182c"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "c551566e50619f540ddeaac1140f3b87e29631b6f6bbc275cf5c91841e886b21409c21d6fb0f4e5628a9a5d5329a16de"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "21c506455b1c405a053e22ce8e63ab3a103add28ff2024973fb03434ff9a7106"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "4d03186a3f914fef223c014cf34e953572a496439bdcd092044a8ec6c6167b594de82362eac62258eaa4391126156c9861bcd1c4ebb582616f917d4d06aa4b5e"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-extension-autoconfigure",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK Auto-configuration",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "bfc9d16d5e0ec21753106b83317963df"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "6d0479e0c13b35eb5f69aa14388acdeb05e2cfde"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "7332d834f3b35082550a22c99db52596b6d9d9b344076210e4a3bc0627704356"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "f75efb61ffcd9b348b2d12faa4894ee9dc729e6e8d6d92501a317c9d1a49ea15d1bd3f473bc01a87347b8affd253e3a8edd372162579dca5b48f9451bc8d7388"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "1d1fa68fb505c71b8b6f1d8b1ebd079fc63c8e6ef0c90256d846b7b38d877649039274e5f059ba1a1e98a880da3689c4"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "f3da33bce4f6387721861be9f78410c809eb044e6faab0eb17a748d2e263e4ff4e489b57da6bd16e556978a34b262432"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "a677feb26ff889e9f304587089d3e0a3a0e14630071aae2ab9590b58e511ab6a"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "0cc39dd1e935012d24b0d9d298bb3c996dfd598fc741275738f41c80ecc068947cc71aba71c026a770fe8eb9538f4cbc578923931766368cbefe6754ffa45793"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-api-events",
-      "version" : "1.34.1-alpha",
-      "description" : "OpenTelemetry Events API",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "e37125ca12e89a0332755ba0b701ce40"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "dd49a639a9d6fa8a88083681ecb1b55903b1db1f"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "f79a27b8300ddb57eb21c7d662db469b34d9f86253529c720eb067ce55c1b345"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "f9916c132bb4f100b1987e75dcc2498443b61b42cd62f27fd63aa9c31516fe20e94eaf755b49f08d835a1163c3e25186ec8bd9347752f9bbc5b19e353225df78"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "26fbf3779e9ac218ff1f35dc317f5a05c7532dc2399a7d7df03b5d5e01ab9f333d45d1d10942ae5ab951239897183f41"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "e32d46b8c03c0d783290edf4dcbe1144a08499f333146b65460ffc1a0163cee2122cff816094c6f7efd4d19ce9fe84ed"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "e8fbe95559638adb6e16cd9ab6bf983c340fe60d4941cba91ad31fdd5068cb84"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "250e71a94c697ac75f62bc7943bb8bbc29a451803997a2a421c04e4649e50946e39589105f2d59ad2b184f44c4c329c6b34bb25e153f5d8411e2ba780430b030"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-api-events@1.34.1-alpha?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-api-events@1.34.1-alpha?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-common",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK Common",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "2d56e67cd0eed7b7de6b97b9e1a63750"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "01fcd8bad38d7b8987f6fc93bd7e933240eb727e"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "bfe9c8efe2c397294527b9a347934187f9b0de805d2cad642017ec7d9b71afc5"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "7c3157593eb80b3252ae4138a25ddf415692cd7be2e96b7e62996b42c33971c700c15a07d7350ee06456aaa6655e6ab0325a80d1025be3ba9dcb015926f58ea7"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "a356f127c743fb138ca645dc92af449b37bb8f893a8b52c7860fed4db019c442a45bf36fd54b5fd5b9da99b0e26e5a90"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "22ad656fe1afa7801066e01ca2a1050b5e1352bb687e1278e1c54241932777995659c9567c5c431d7f0a7b09a8fef88a"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "c90ad17c2b9ae9bba2ce391605a670ce4f7d202f6b9d48d7a2314caac9b96fe4"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "6200cb5a2d0bddeb7dae2786a6de32b84c8571ea84a09a4af7be78574465b25f4162426daf1ab5ee4e26f6107147198df8b35bd1b2e50bc9647836cfb609aa34"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar"
+      "bom-ref" : "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar"
     },
     {
       "group" : "commons-io",
@@ -924,713 +453,6 @@
       ],
       "type" : "library",
       "bom-ref" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-context",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry Context (Incubator)",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "1ded7fb606c1dec8ba83ce3d62219068"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "3fcc87f3d810ce49d865ee54b40831559c5e129b"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "62d34f3dbf37783dc0223afe612bccecdccf404eb25cef95a3ab90fcaa689975"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "dbf6a588bc0842918a745c439d4e2dde35ed7a54cc10eef445d2e411d97db337cfe9dd65ac61a82057475ed6522240f5cba091f98b7c94a072eb4a3133b7d67b"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "b3e96fa5b2adea7dfc73909183d03ec86a0eb7a3c2db5499930af6772b78a7c1bcb0ca58a8a4dccd9980da77d4c441fb"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "0d281e2b5604716d1e8fd60025b10afcb28d28a9652b6566172f36df16f6b0f814ff394d5df3d2c5e56338c5b2536ce8"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "aa56291d591bdbb5c937f87af2fce560dc21f6546834b594516cd2577016ef75"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "58c4c6da9e0436e8522797bd16567494dc9732cda474bfaee971ee59254b7f4f94eb6e94e80c73345d14352e605ba6829f0b4fafcaa7694c807e97ccdc57a943"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.34.1?type=jar"
-    },
-    {
-      "group" : "org.jetbrains.kotlin",
-      "name" : "kotlin-stdlib-jdk7",
-      "version" : "1.9.10",
-      "description" : "Kotlin Standard Library JDK 7 extension",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "14f35bcc452b095f3034a1471960cccc"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "bc5bfc2690338defd5195b05c57562f2194eeb10"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "ac6361bf9ad1ed382c2103d9712c47cdec166232b4903ed596e8876b0681c9b7"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "f839178f07b9d6bd9a3910d13b181399e975211fa556c3a9ead08eca30ababa74f75c79aee95224ffb7b610b9e56768eeeba18e8fae84826903adb12e122bb67"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "b93606f0e2888e6c48665d1003ee4766dde5b58be284afa604010f592c8f9390904e430f8704cc0a7d57d00788b858d7"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "8f9bfcdea034e6f73deef804e00ed2535631b0b7cf433515a60ce7c38479e0f7a2d7459bbc2bbf87163ef63156384451"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "a8a6eb1d7d305c85ac73cba3d9b0bbf0c17dbcdfe58b4864b9e15124c9c097f0"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "b34b365d5e32f0372426ff076ba0bbc8568891687fd8b2ae67a88576bb32e2f54844b7f41200ea20f333eb27bb5bc617e55a6a99ec6b2f23c5091dfe5a00a706"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.9.10?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/JetBrains/kotlin"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.9.10?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "650b75c29d070af3d63d3cb4f442455e"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "ab49eb621d6d01f0ad2f016989d0352ef18ea9a2"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "de1f9ab3f1d0ddfcf6d698f3059352f6ecfbdff4318424eeca62e1eea6b745cd"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "b7cac4721e45eaa12639a4eb5d2da4b3106e5471597bdf15ec7d8139751d71340a11157c2a5896ee0bfb23e81585e90a9b28d471672cf4d469af695d39860815"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "9e63c22fd4182b88c2e5402dd85ecdcd5b68c46fd3508c8bcb7a65e5b0a883fecd57c9ff2cc3d33231e34efce7cf823c"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "e0c42e68b25f13ae123b4eb2e1b210d0cd4cd6d4f117f67d609bae67fd71ef14539bc6a01c41d6c26544d1627e37d6a7"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "a5ccefe5441829e969f6086b37e20ceef677cc2551a65fec1d1f308fb3ab87f1"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "5209309b6fa7a1560d15432f08cbf770663fd71f86592ea0b1ab83ca77f394f1594be118a911d72fbf44bcaee5ba9ac8cd17e156d613dadf97c4118d4cc68090"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar"
-    },
-    {
-      "group" : "com.google.guava",
-      "name" : "listenablefuture",
-      "version" : "9999.0-empty-to-avoid-conflict-with-guava",
-      "description" : "An empty artifact that Guava depends on to signal that it is providing ListenableFuture -- but is also available in a second \"version\" that contains com.google.common.util.concurrent.ListenableFuture class, without any other Guava classes. The idea is: - If users want only ListenableFuture, they depend on listenablefuture-1.0. - If users want all of Guava, they depend on guava, which, as of Guava 27.0, depends on listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The 9999.0-... version number is enough for some build systems (notably, Gradle) to select that empty artifact over the \"real\" listenablefuture-1.0 -- avoiding a conflict with the copy of ListenableFuture in guava itself. If users are using an older version of Guava or a build system other than Gradle, they may see class conflicts. If so, they can solve them by manually excluding the listenablefuture artifact or manually forcing their build systems to use 9999.0-....",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "d094c22570d65e132c19cea5d352e381"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "b421526c5f297295adef1c886e5246c39d4ac629"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "c5987a979174cbacae2e78b319f080420cc71bcdbcf7893745731eeb93c23ed13bff8d4599441f373f3a246023d33df03e882de3015ee932a74a774afdd0782f"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "caff9b74079f95832ca7f6029346b34b606051cc8c5a4389fac263511d277ada0c55f28b0d43011055b268c6eb7184d5"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "e939f08df0545847ea0d3e4b04a114b08499ad069ba8ec9461d1779f87a56e0c37273630a0f4c14e78c348d3ac7eb97f"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "1f0a8b1177773b3a8ace839df5eed63cbf56b24a38714898a6e4ed065c42559f"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "6b495ecc2a18b17365cb08d124a0da47f04bcdde81927b5245edf3edd8e498c3c3fb92ce6a4127f660bac851bb1d3e4510e5c20d03be47ce99dc296d360db285"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar"
-    },
-    {
-      "group" : "com.squareup.okhttp3",
-      "name" : "okhttp",
-      "version" : "4.12.0",
-      "description" : "Square’s meticulous HTTP client for Java and Kotlin.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "6acba053af88fed87e710c6c29911d7c"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "2f4525d4a200e97e1b87449c2cd9bd2e25b7e8cd"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "b1050081b14bb7a3a7e55a4d3ef01b5dcfabc453b4573a4fc019767191d5f4e0"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "da63f77c1cae377b40f6fd00cfbbe8177e760e4e622ae2c66860fffd3bbbdf605c8e8e415762e9263445b2289ee834100237c63949f2e01c30b6704315dd8f7b"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "0a8fbe4104c511169232caa90bc52b8a842b6b4cfba525b1c749ca25ede252992c1a3b6c0b6b43143949bc1f1eea742e"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "f41dde0de63dba9c941083a9e9f9681e5e497149cae49988b1a5b36fe2263d351035ee378e06975b5f3145b91393cd75"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "736a6abc2a2128ddcabcf46c9ba70e4656c2bedaeadbe8f9f76bb807db657b05"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "b2a39d9dff52994e78774d628228f7b3959d6070db2b535c70a90de70a7a716ed011d4dc210886314c1ebad8478b2460c652a2bf68094dba30d3593a1a750c75"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.squareup.okhttp3/okhttp@4.12.0?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/square/okhttp"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.squareup.okhttp3/okhttp@4.12.0?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-extension-incubator",
-      "version" : "1.34.1-alpha",
-      "description" : "OpenTelemetry API Incubator",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "1e72c9abd35b2939f0f0716b686c9b24"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "9201e6a43a0a89515626f7516c7d1b2c349f76df"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "63f7948e7d34b81b8adb11ac8cee5738a333e57954c7da28231eca168656514d"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "6f7cb40c74e06b2be3acdd1063f61dc7fda792d3d53d6b71b8ea53e1ee027bb98ec306ee3387d6ab8b98ce6d64f5e4789fd1188b78c840e25796c8c9871721f9"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "9e619f247ce755f6e1ccecd895d1f50dd0669a6f67a3c58db21ed9989883a2236fafa31404b80e23370c3ad635027e19"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "7fd6afacda727e57eb02ef80d5747a70599bd8aea0b7578fa8d5cb7e535e5b8023685c82722731765b572cefd6a21f65"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "743aa5674cf3daf9a4a912812e72a682f674fe3d03c23e6d79d81bb8d88ec3c7"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "884ed956cfa2b750d3cec12858191a1fc1c6b608c1e81a2a795b251c147d25a1a33973b49b615e6741fa356b9ce159f012ed909c8908ac8748f36aaa95a1bac0"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar"
-    },
-    {
-      "group" : "org.jetbrains",
-      "name" : "annotations",
-      "version" : "13.0",
-      "description" : "A set of annotations used for code inspection support and code documentation.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "f4fb462172517b46b6cd90003508515a"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "919f0dfe192fb4e063e7dacadee7f8bb9a2672a9"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "5622d0ffe410e7272e2bb9fae1006caedeb86d0c62d2d9f3929a3b3cdcdef1963218fcf0cede82e95ef9f4da3ed4a173fa055ee6e4038886376181e0423e02ff"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "6bcde3a6e471d416522e6288474bc4f9115e2e8abf8ce5d300829bee4aa98dff73be7d8c6f0607f3d6d423c7f5abbf90"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "f4d5a5d5a76b24c4751c8c52f2879b097d2430c3571c59b4630e8c871c9bdb08e24e803a14c24fc8d3378417f29b7244"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "b4a80ea81c4bc7e364e07981465f547e8ed83031806eaf3b97dfb38f894f5b6f"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "15b23bce818b4399b334dd632eb85de5a1b70c47fb9260561e70b1f726211c83bddbc957f3b4c32a1d8c687f9bc6c38d0a638c731cb5daf5b619aa725d6050c2"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.jetbrains/annotations@13.0?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "distribution",
-          "url" : "http://oss.sonatype.org/service/local/staging/deploy/maven2/"
-        },
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/JetBrains/intellij-community"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.jetbrains/annotations@13.0?type=jar"
-    },
-    {
-      "group" : "org.apache.pdfbox",
-      "name" : "fontbox",
-      "version" : "2.0.30",
-      "description" : "The Apache FontBox library is an open source Java tool to obtain low level information from font files. FontBox is a subproject of Apache PDFBox.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "3a7b597c9dbd56e18455e6efca52cbb3"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "555e5d59a4d83c95c4330f018a6c32861880b6df"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "aae7518f9c17d347531e63b22a46de582cb78f7e45d079a78a79dc9bdb23f8ba"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "61eb46fee25826a8b0750fbe3823504e043f7e809f6ac3d144a1ba773195de29ebcffe30faee1bc9d2db50c94c45ebf65b67eb19e3358dbabf7878d36f133396"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "ca4ccf8281e1b481f83b8e156a3c2cfab0590f3d0a0a19f9cf80997966170affb01da293bacb880ae70ff8e6f54deb0e"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "184a9a72f221f34fb98b9d5e132b74b18bab569b8f6e86a5e1e7b88e5d6f82095607809e2cd98620f43cdbd3efd0b277"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "1c1333b59673e8caf3db1fc6453ce9c799b133faaee9017c2860a03257107325"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "4b018c517e51185debe39adc9237728b6a189cbfc8053bc8401fa2c115f2a40c1e242b5ce1ebf0339480bc332bd4681e9a3dcbb1c4c5bc8d7fca16f202e3ef5b"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar"
-    },
-    {
-      "group" : "org.jetbrains.kotlin",
-      "name" : "kotlin-stdlib-jdk8",
-      "version" : "1.9.10",
-      "description" : "Kotlin Standard Library JDK 8 extension",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "d223cbd9e57f02cf4e9f3d9ed01edcee"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "c7510d64a83411a649c76f2778304ddf71d7437b"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "a4c74d94d64ce1abe53760fe0389dd941f6fc558d0dab35e47c085a11ec80f28"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "b027fc4a0be8e69f41a86ae775ce350ef0084eb4652e50a0640dbcc600db76c3fc2983e17c96b6071b5698cea636e1b2cb015e84a6c0efe95e6db668036ba3cc"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "3889a432424a69fa2fea634bb540a1a78c12c2ed42d02efe74ffbe90d980497975f4d43d9b994bd520953d0761cdfaa3"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "836acd6918290fa1b6a5ffa223597233e34b6c685dfe76568b5895fcd9e75294a7f065c35bb652e653014879f25aa8ee"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "4125ea0839e84336806248e9a8c46053f9e5fe065797c11353e5475ac096f7e8"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "40742cd9e9370be96fd9a8e1b15ae419381a7eafdc1fd8a9954bc20193ea2dfc4b0b29ec154966d4e385c2384e13c84dcf10a503a54c9006894b5f4b2f93d89d"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.9.10?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/JetBrains/kotlin"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.9.10?type=jar"
-    },
-    {
-      "group" : "com.google.guava",
-      "name" : "guava",
-      "version" : "32.0.1-jre",
-      "description" : "Guava is a suite of core and expanded libraries that include utility classes, Google's collections, I/O classes, and much more.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "6951895e804b36322214c95917e598d4"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "6e5d51a72d142f2d40a57dfb897188b36a95b489"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "bd7fa227591fb8509677d0d1122cf95158f3b8a9f45653f58281d879f6dc48c5"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "5dbe7a697511cfbe44f3ffb954e32e997677ecc61f03bb7bb374f1b8fa4a931a95cd9d1f5288eb5d42e2aa380e3241b35059786c07edc48e5aa67c30cddad8a5"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "abad4556e073fb38062c636b6599ceed992302c7d98150e3842d32ce92f6aac7d630633c56efa581523d591361fcf898"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "c7b02d77e04c567e8870674f71a60141e83ca9e5e9180138450ede78ad7f2be8b6636c514096e15ba2921c2889427852"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "17f18d8631c9bff9234c214522ce89eb1feef27a4dfe990760d4943ad3de710d"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "7cf7847812b47cc232ef3c27719457dd19610b3e3bb25c1be640821a3a2be67781047f41e34491b5c8ed68010bbb1d53c5f7706633f3a3f44f3f3133bb7635ec"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar"
-    },
-    {
-      "group" : "org.apache.commons",
-      "name" : "commons-text",
-      "version" : "1.10.0",
-      "description" : "Apache Commons Text is a library focused on algorithms working on strings.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "4afc9bfa2d31dbf7330c98fcc954b892"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "3363381aef8cef2dbc1023b3e3a9433b08b64e01"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "770cd903fa7b604d1f7ef7ba17f84108667294b2b478be8ed1af3bffb4ae0018"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "afd836a1094449e0a791fee67363666c47b6d24acff353a5089b837b332c0f4af89565c354682521e37062d20e6b52d70c77bb4f24cca9b9532c274fc708a831"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "06c56e6e513dd77cf10d0da46cdea08c34e220e81fa024735b668c6650df4234e564fe865ff5cafea963f56b1e8ffd4a"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "f09065ed066c25debf8c78cbb0bcc738e1ea283302ec992dcfb649acb90091cff879465c65a162e94534d454e3b4e9bb"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "0b59c567164bb755f2353b78ba66744000a8c4b35e1df05255b080a21c3a3dd5"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "f0fbce02a862b70f472a27d0722c54ac111ca2eb94584b8b0b73d1926aec26047cd92542ad0b3cf980a6825077587f41b194aa93d6f6350d1b87e59e8df1be7c"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "issue-tracker",
-          "url" : "https://issues.apache.org/jira/browse/TEXT"
-        },
-        {
-          "type" : "vcs",
-          "url" : "https://gitbox.apache.org/repos/asf?p=commons-text.git"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar"
-    },
-    {
-      "group" : "com.squareup.okio",
-      "name" : "okio-jvm",
-      "version" : "3.6.0",
-      "description" : "A modern I/O library for Android, Java, and Kotlin Multiplatform.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "26370180ff99a7e8a12dcaac2a70cc6e"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "5600569133b7bdefe1daf9ec7f4abeb6d13e1786"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "67543f0736fc422ae927ed0e504b98bc5e269fda0d3500579337cb713da28412"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "a592e93651fb5e335212bb25c1cf474c1b1076eda68d53cbdc82c383cbdd60114a62b698ca92a3b4b5e416d637a70f2ddabbf8a05551c62d59a240c3e3c3d2c6"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "825856eb690645dbaaa02a6047ebbfe2b2c0a9191d37c177b216160bd89286e98695fc91cd75a9b6ac7e8d1f3a106ff6"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "07c656a88258ed39d50941355e955dfaa74dad3f128ff48e8c2654a53607e940ca3f3383f4f97f1b9e91670734ff1424"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "95baa62978b92951e1921749529688efa24d0a329843427fe822cc4e90399483"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "f2fca794345a93448b2c770c2525586b661447acbac32142fba0152320c164b5cd27d2d6a478e72e72c54ff4e0e93eaa729529b6f5aefa7e6d7b732d0d9532b7"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/com.squareup.okio/okio-jvm@3.6.0?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/square/okio/"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/com.squareup.okio/okio-jvm@3.6.0?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-exporter-logging",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry - Logging Exporter",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "d8b64e0dd53b3db17ebfd9a42cc6c6b7"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "b3e74d5b8cf5e60d9965042fa284085bbe081ce3"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "ebe441682652ad91cf4a6daf7d17974f31571dc21dc5d8c60b21d1c2986270f1"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "3e26a331d86e42e24cc493ce0376fd5532b3ac4fc8a54589fa87e6e3bac3ff54615cc17120b573b1f74d339606477322cbc77c5183b4d2f8bbd5fb29774bcdf0"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "99ed675890ced307fcf33e5de45302ab86a3d0225d4891c445ce489d33ab8e497498696b689f6c1be2c0bcc0d85d2886"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "ec75fe98fdf8a21c42b1320189e63a503d4590951a93e515b92069db2f70105d1d4c5450f87ed59dc3b7fc700da3fe62"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "fdf5bbd5cb62dca567f59913d16c66fa4fdcb6a17a0e5ece1f9b3251f3a10230"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "08d157268408d0c39acf309e05f532139030b39ee82bf94cc99c090e848ee8efb4cd7bab3d38ee1949757d0b28a9cb935ae1e8c0f231170d15bf5c66be1d53f9"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-logging@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-logging@1.34.1?type=jar"
     },
     {
       "group" : "org.checkerframework",
@@ -1740,42 +562,42 @@
       "bom-ref" : "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0?type=jar"
     },
     {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-exporter-sender-okhttp",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry OkHttp Senders",
+      "group" : "com.google.guava",
+      "name" : "guava",
+      "version" : "32.0.1-jre",
+      "description" : "Guava is a suite of core and expanded libraries that include utility classes, Google's collections, I/O classes, and much more.",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "4a24da0ebed74fbe4646a92afcad118f"
+          "content" : "6951895e804b36322214c95917e598d4"
         },
         {
           "alg" : "SHA-1",
-          "content" : "9f07e1764389e076a36fb7d9e5769e29f3dab950"
+          "content" : "6e5d51a72d142f2d40a57dfb897188b36a95b489"
         },
         {
           "alg" : "SHA-256",
-          "content" : "4799d07bdbe89caa5df048e25b7aea623d29fd08399a544de25869f4fb87e312"
+          "content" : "bd7fa227591fb8509677d0d1122cf95158f3b8a9f45653f58281d879f6dc48c5"
         },
         {
           "alg" : "SHA-512",
-          "content" : "934c725a0abeb72ea07ef10e4954aea363fed1d67bf929a8c30876a6619e80bbc7bb898dec483d5eb7ca4d021bc722e24bbc6c037b12043dae8ac14047d3c4fb"
+          "content" : "5dbe7a697511cfbe44f3ffb954e32e997677ecc61f03bb7bb374f1b8fa4a931a95cd9d1f5288eb5d42e2aa380e3241b35059786c07edc48e5aa67c30cddad8a5"
         },
         {
           "alg" : "SHA-384",
-          "content" : "792eb983e8756203b55480ed589bea34ea28fd2b483e4f6b38ff9ef63ac4c5d72aca83c6af0c9633feefef693c3476c9"
+          "content" : "abad4556e073fb38062c636b6599ceed992302c7d98150e3842d32ce92f6aac7d630633c56efa581523d591361fcf898"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "042f74dd938dbec82a1a9872ab6988ceb2b49f4d4c346c07e0900cb228fa1b26172d22aa59dad7c0baa9e8091826deaa"
+          "content" : "c7b02d77e04c567e8870674f71a60141e83ca9e5e9180138450ede78ad7f2be8b6636c514096e15ba2921c2889427852"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "e1af2fa844bb8e6c853f3601e817da5b0868b43aeb62c5cb06a069a277f47e0a"
+          "content" : "17f18d8631c9bff9234c214522ce89eb1feef27a4dfe990760d4943ad3de710d"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "eccf2a4de6a3910dce7ae090553f3928dc7caa8cf38cb14acd7491fdb2bf1a84aae7989ca61d7548cdf3e358c901cded845609e7f41c2b550d824377d41cedad"
+          "content" : "7cf7847812b47cc232ef3c27719457dd19610b3e3bb25c1be640821a3a2be67781047f41e34491b5c8ed68010bbb1d53c5f7706633f3a3f44f3f3133bb7635ec"
         }
       ],
       "licenses" : [
@@ -1785,48 +607,99 @@
           }
         }
       ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-sender-okhttp@1.34.1?type=jar",
+      "purl" : "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar",
       "modified" : false,
       "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-sender-okhttp@1.34.1?type=jar"
+      "bom-ref" : "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar"
+    },
+    {
+      "group" : "com.google.guava",
+      "name" : "failureaccess",
+      "version" : "1.0.1",
+      "description" : "Contains com.google.common.util.concurrent.internal.InternalFutureFailureAccess and InternalFutures. Most users will never need to use this artifact. Its classes is conceptually a part of Guava, but they're in this separate artifact so that Android libraries can use them without pulling in all of Guava (just as they can use ListenableFuture by depending on the listenablefuture artifact).",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "091883993ef5bfa91da01dcc8fc52236"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1dcf1de382a0bf95a3d8b0849546c88bac1292c9"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f8d59b808d6ba617252305b66d5590937da9b2b843d492d06b8d0b1b1f397e39f360d5817707797b979a5bf20bf21987b35333e7a15c44ed7401fea2d2119cae"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "67659dbd9647ec303d7f15128dc9dba19b98fd8d74758ee3b602451e32c855e236ccaafe08edf4bbfa245f981268440f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1460875f0331c5fa3791772a6a322a7db180261bc2adacf7271df1fbf3b088a587a755a604c039982cb593c5cfc1f101"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ea86406e75fcd93eafe3cde1b3135ba485f1bb9b75fed98894a0bf1f0aee04f0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "52ac0f487ab5dd27c9f2e54fd1d84c7a620cae9d49be4072aa2b11501787bf4391ddaa13d02eccdf19e8eea46aecbea5f6064b26777c1b836108a280652e04ac"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar"
     },
     {
       "group" : "org.apache.commons",
-      "name" : "commons-lang3",
-      "version" : "3.12.0",
-      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "name" : "commons-text",
+      "version" : "1.10.0",
+      "description" : "Apache Commons Text is a library focused on algorithms working on strings.",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "19fe50567358922bdad277959ea69545"
+          "content" : "4afc9bfa2d31dbf7330c98fcc954b892"
         },
         {
           "alg" : "SHA-1",
-          "content" : "c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e"
+          "content" : "3363381aef8cef2dbc1023b3e3a9433b08b64e01"
         },
         {
           "alg" : "SHA-256",
-          "content" : "d919d904486c037f8d193412da0c92e22a9fa24230b9d67a57855c5c31c7e94e"
+          "content" : "770cd903fa7b604d1f7ef7ba17f84108667294b2b478be8ed1af3bffb4ae0018"
         },
         {
           "alg" : "SHA-512",
-          "content" : "fbdbc0943cb3498b0148e86a39b773f97c8e6013740f72dbc727faeabea402073e2cc8c4d68198e5fc6b08a13b7700236292e99d4785f2c9989f2e5fac11fd81"
+          "content" : "afd836a1094449e0a791fee67363666c47b6d24acff353a5089b837b332c0f4af89565c354682521e37062d20e6b52d70c77bb4f24cca9b9532c274fc708a831"
         },
         {
           "alg" : "SHA-384",
-          "content" : "c34b8a0e0eba2168ad56fedeb7a1d710b6f1d3f1ce6aae99a4e0247bd120efbbadc8dcb2f731045b8a16e3efd30604dc"
+          "content" : "06c56e6e513dd77cf10d0da46cdea08c34e220e81fa024735b668c6650df4234e564fe865ff5cafea963f56b1e8ffd4a"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "8ad6ebe7754bf0caa8cda7e59c0e95360d76e06a7ad6aeec5637985519dbd1dd06e7eed04711039f36ec4c49de280def"
+          "content" : "f09065ed066c25debf8c78cbb0bcc738e1ea283302ec992dcfb649acb90091cff879465c65a162e94534d454e3b4e9bb"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "18ef639b2aeeb5aedffb18dbf20c79f33e300d99fb31b131689639cc470e6e4c"
+          "content" : "0b59c567164bb755f2353b78ba66744000a8c4b35e1df05255b080a21c3a3dd5"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "fbea96114dcf4f31cfaaa99987be756ddda3a6c74f8c835461997df794d54b92da1f60fe5c3f1f2a43cb8c5f5db7f4048bef77c70993673c7a93f3660fffc8da"
+          "content" : "f0fbce02a862b70f472a27d0722c54ac111ca2eb94584b8b0b73d1926aec26047cd92542ad0b3cf980a6825077587f41b194aa93d6f6350d1b87e59e8df1be7c"
         }
       ],
       "licenses" : [
@@ -1836,58 +709,58 @@
           }
         }
       ],
-      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
+      "purl" : "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar",
       "modified" : false,
       "externalReferences" : [
         {
           "type" : "issue-tracker",
-          "url" : "https://issues.apache.org/jira/browse/LANG"
+          "url" : "https://issues.apache.org/jira/browse/TEXT"
         },
         {
           "type" : "vcs",
-          "url" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-text.git"
         }
       ],
       "type" : "library",
-      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar"
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar"
     },
     {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-sdk-metrics",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry SDK Metrics",
+      "group" : "commons-logging",
+      "name" : "commons-logging",
+      "version" : "1.2",
+      "description" : "Apache Commons Logging is a thin adapter allowing configurable bridging to other, well known logging systems.",
       "hashes" : [
         {
           "alg" : "MD5",
-          "content" : "9323ffdcfb667e99ac0be5141e510c85"
+          "content" : "040b4b4d8eac886f6b4a2a3bd2f31b00"
         },
         {
           "alg" : "SHA-1",
-          "content" : "d88407ae475e5f4e859a81e4f61e362e939f7bc2"
+          "content" : "4bfc12adfe4842bf07b657f0369c4cb522955686"
         },
         {
           "alg" : "SHA-256",
-          "content" : "a983e742c26006ba08888a5fb89f085f92dd81c923febe3ac5c6259b7ec9935d"
+          "content" : "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636"
         },
         {
           "alg" : "SHA-512",
-          "content" : "70d4ade13182ccc0bdf8830fea10d336a62ff3262907e34b4f1d545883191864cb6b0ea6f4eda744db26cd0dd5436bbbce4f0cebc94221d84051b2df9541762a"
+          "content" : "ed00dbfabd9ae00efa26dd400983601d076fe36408b7d6520084b447e5d1fa527ce65bd6afdcb58506c3a808323d28e88f26cb99c6f5db9ff64f6525ecdfa557"
         },
         {
           "alg" : "SHA-384",
-          "content" : "62106ab5985820c2617fb19d2c5cc25c247158fdb411cbe0e6d21bc207ef03ba16ea15e6899e71b1d169a0d717b070c6"
+          "content" : "ac20720d7156131478205f1b454395abf84cfc8da2f163301af32f63bd3c4764bd26cb54ed53800f33193ae591f3ce9c"
         },
         {
           "alg" : "SHA3-384",
-          "content" : "899a43774b098e7fa627a81d865fe52d53bbe38d66b3512da4df34b2daa0a17f493a0b00b3cb527d491c7db999031a78"
+          "content" : "628eb4407e95dca84da1a06b08a6d9b832a49de8472b1b217e8607f08efeeed18b996232d64dd07f03e78e0e3bb4b078"
         },
         {
           "alg" : "SHA3-256",
-          "content" : "41414046c031ebe5a87492f46167969676e8bb57551b9d1b33a4c8f8bef625dd"
+          "content" : "9aab62deccf156ee6e324c925dfc30ecb53e8465802863a551901a461424e807"
         },
         {
           "alg" : "SHA3-512",
-          "content" : "df00b8ee57c1fa5015384e5bdcda19f34410e8b1dbb16094d2c6c89feac9fbeb316c2f9c27ea28789887db40760b4131c7c7fb61540f70020467990c24be577c"
+          "content" : "3fd76857f6d20c03799537cc961c1c4ddf1c375c6c192fb982363e3b9397ba138b77f24ef38b4202f44e37586789c0320e4de18fdadd2772304fd14a9b26d552"
         }
       ],
       "licenses" : [
@@ -1897,117 +770,31 @@
           }
         }
       ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.34.1?type=jar",
+      "purl" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar",
       "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "http://issues.apache.org/jira/browse/LOGGING"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://svn.apache.org/repos/asf/commons/proper/logging/trunk"
+        }
+      ],
       "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-exporter-otlp-common",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry Protocol Exporter",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "641f040c7a067958e3f82835c5580d27"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "4acab18052267e280d1f9de22c591a5c88bed3a6"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "e9f5f326d1fb963149e35e4cca91d0076f682ef680c006f91b6470671777320b"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "24d0d0f9a833588ff88d101be6d37903a71bc66e8dad1f70cba84d2a6c495cfecc9a15f7ef1c53da32f22861c67d7de8e9f627d2102204f3eac9b622221d286d"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "3e080429bc7659f495ac7022122547d219e9197e1c5e8a095eaf1d094239955d5531a1a3d0e9fb2b36e452972d0a44f6"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "2423e56e345aa7e83a2d55c891d9b109759d8906a3ca395dd9dc1ebff5c60632a976a2390a0033a7ddfb79f2d1981051"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "c7ba06295cd601556cb09826de13d9dc8005a4887223f7632736f4636e8e11f6"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "5cb4a02e9dc6bb6e11ed855a4b4fd58e889d79389640e3ce0ad1342aeb94f459281d846097eb68530bfa6c957ca7bcde04dce5534b90bec55fc3463668def41f"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp-common@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp-common@1.34.1?type=jar"
-    },
-    {
-      "group" : "io.opentelemetry",
-      "name" : "opentelemetry-exporter-otlp",
-      "version" : "1.34.1",
-      "description" : "OpenTelemetry Protocol (OTLP) Exporters",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "2c8055610d7e0a35724c61cc7e3084f5"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "af68f90f0410b7b3a1900d3e0a15ad51b10ffd5b"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "a3bbc6e5ad96b61fa734f7cf7870a1f7cb547dae760da168833f2a2bb23b86ac"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "1dbdda69aff85cd696f4dcfe91375398472d20128fe77693c3841823fe4a386e531ea5cb5cf797fbb39aca7880c6d69a18745040da7af54dedd2fd10c4b267ff"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "75eb0ba4d8fc508f2f1afd974975b2b52c8ae2801cf65d255e06b874eab16cb8174bae6a15bfdc04182a9a3be482b161"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "2005491c3d5ae069430272cbd667da48aad113ec10e9c0392253fd497002e41ab15bd2f9d8e29d12ca49c5e6d34e753f"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "47e98594fc720850fc05ab15d8689d2de7498dd81d3c2295f6ae78da69f99905"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "f3bc419101bd9bdb5ff7a6500f57294e47d1a577ea3e4a41cb88da542153b715826af9e1287bb7173cb11714320cf358927d157283983ec3f3f1746c1e24f666"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "id" : "Apache-2.0"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp@1.34.1?type=jar",
-      "modified" : false,
-      "type" : "library",
-      "bom-ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp@1.34.1?type=jar"
+      "bom-ref" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
     }
   ],
   "dependencies" : [
     {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-context@1.34.1?type=jar",
+      "ref" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
       "dependsOn" : [ ]
     },
     {
@@ -2015,32 +802,6 @@
       "dependsOn" : [
         "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar",
         "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api-events@1.34.1-alpha?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-sender-okhttp@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp-common@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.9.10?type=jar",
-      "dependsOn" : [
-        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.9.10?type=jar",
-        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.9.10?type=jar"
       ]
     },
     {
@@ -2055,152 +816,19 @@
       ]
     },
     {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-sender-okhttp@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-common@1.34.1?type=jar",
-        "pkg:maven/com.squareup.okhttp3/okhttp@4.12.0?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.9.10?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp-common@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-common@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.checkerframework/checker-qual@3.33.0?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.9.10?type=jar",
-      "dependsOn" : [
-        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.9.10?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar",
-      "dependsOn" : [
-        "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/com.squareup.okhttp3/okhttp@4.12.0?type=jar",
-      "dependsOn" : [
-        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.9.10?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.9.10?type=jar",
-      "dependsOn" : [
-        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.9.10?type=jar",
-        "pkg:maven/org.jetbrains/annotations@13.0?type=jar"
-      ]
-    },
-    {
       "ref" : "pkg:maven/com.mendix/temp@1.0.0?type=jar",
       "dependsOn" : [
         "pkg:maven/com.google.guava/guava@32.0.1-jre?type=jar",
         "pkg:maven/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer@20211018.2?type=jar",
         "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-logging@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-exporter-otlp@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar",
         "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
         "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar",
         "pkg:maven/org.apache.pdfbox/pdfbox@2.0.30?type=jar"
       ]
     },
     {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-api-events@1.34.1-alpha?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
       "ref" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar",
       "dependsOn" : [ ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-common@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-exporter-logging@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-context@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-api-events@1.34.1-alpha?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
     },
     {
       "ref" : "pkg:maven/org.apache.commons/commons-text@1.10.0?type=jar",
@@ -2209,7 +837,15 @@
       ]
     },
     {
+      "ref" : "pkg:maven/commons-logging/commons-logging@1.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
       "ref" : "pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.checkerframework/checker-qual@3.33.0?type=jar",
       "dependsOn" : [ ]
     },
     {
@@ -2221,27 +857,18 @@
       "dependsOn" : [ ]
     },
     {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-extension-incubator@1.34.1-alpha?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.34.1?type=jar",
-      "dependsOn" : [
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.34.1?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-api@1.34.1?type=jar"
-      ]
-    },
-    {
-      "ref" : "pkg:maven/org.jetbrains/annotations@13.0?type=jar",
-      "dependsOn" : [ ]
-    },
-    {
       "ref" : "pkg:maven/org.apache.pdfbox/fontbox@2.0.30?type=jar",
       "dependsOn" : [
         "pkg:maven/commons-logging/commons-logging@1.2?type=jar"
       ]
+    },
+    {
+      "ref" : "pkg:maven/com.google.j2objc/j2objc-annotations@2.8?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
+      "dependsOn" : [ ]
     }
   ]
 }
