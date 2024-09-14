@@ -8,38 +8,32 @@ import io.opentelemetry.javaagent.shaded.io.opentelemetry.api.trace.Span;
 import io.opentelemetry.javaagent.shaded.io.opentelemetry.api.trace.StatusCode;
 import io.opentelemetry.javaagent.shaded.io.opentelemetry.api.trace.Tracer;
 import io.opentelemetry.javaagent.shaded.io.opentelemetry.context.Context;
-
+import io.opentelemetry.javaagent.shaded.io.opentelemetry.context.Scope;
 
 public class SpanManager {
     private static final Tracer tracer = GlobalOpenTelemetry.getTracer("customTracer");
 
-    // 存储所有 span，键是 spanId，值是对应的 Span 对象
     private static final Map<String, Span> spanMap = new HashMap<>();
+    private static final Map<String, Scope> scopeMap = new HashMap<>();
 
-    /**
-     * 创建一个新的 Span，使用 parentSpanId 作为父 Span（如果存在）。
-     */
     public static String createSpan(String name, String parentSpanId) {
         Span span;
+        Scope scope;
         if (parentSpanId != null && spanMap.containsKey(parentSpanId)) {
-            // 如果有父 Span，使用父 Span 创建子 Span
             Span parentSpan = spanMap.get(parentSpanId);
             span = tracer.spanBuilder(name)
                     .setParent(Context.current().with(parentSpan))
                     .startSpan();
         } else {
-            // 如果没有父 Span，直接创建根 Span
-            span = tracer.spanBuilder(name).startSpan();
+            span = tracer.spanBuilder(name).setParent(Context.current()).startSpan();
         }
-        
+
         String spanId = span.getSpanContext().getSpanId();
         spanMap.put(spanId, span);
+        scopeMap.put(spanId, span.makeCurrent());
         return spanId;
     }
 
-    /**
-     * 为指定的 Span 添加事件。
-     */
     public static void addEvent(String spanId, String event) {
         Span span = spanMap.get(spanId);
         if (span != null) {
@@ -49,11 +43,13 @@ public class SpanManager {
         }
     }
 
-    /**
-     * 结束指定的 Span 并设置状态。
-     */
     public static void endSpan(String spanId, StatusCode status) {
         Span span = spanMap.get(spanId);
+        Scope scope = scopeMap.get(spanId);
+        if(scope != null) {
+            scope.close();
+            scopeMap.remove(spanId);
+        }
         if (span != null) {
             span.setStatus(status);
             span.end();
@@ -64,9 +60,6 @@ public class SpanManager {
         }
     }
 
-    /**
-     * 为指定的 Span 记录异常。
-     */
     public static void recordException(String spanId, String exception) {
         Span span = spanMap.get(spanId);
         if (span != null) {
@@ -76,9 +69,6 @@ public class SpanManager {
         }
     }
 
-    /**
-     * 为指定的 Span 设置一个属性。
-     */
     public static void setAttribute(String spanId, String attributeName, String attributeValue) {
         Span span = spanMap.get(spanId);
         if (span != null) {
