@@ -36,7 +36,7 @@ public class createSpan extends CustomJavaAction<java.lang.String>
 		String spanId = null;
 		String mfName = "";
 		if (name_ == null) {
-		  mfName = getContext().getActionStack().get(1).getActionName();
+		  mfName = getContext().getActionStack().get(0).getActionName();
 		}
 		else {
 			mfName = name_;
