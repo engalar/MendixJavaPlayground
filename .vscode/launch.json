@@ -7,9 +7,9 @@
       "javaExec": "d:/Program Files/Java/jdk-17.0.2/bin/java.exe",
       "request": "launch",
       "classPaths": [
+        "d:/Program Files/Mendix/10.12.1.39914/runtime/bundles/*",
         "d:/Program Files/Mendix/10.12.1.39914/runtime/launcher/runtimelauncher.jar",
-        "D:/Users/eg/Documents/GitHub/MendixJavaPlayground/deployment/model/lib/userlib/javassist-3.28.0-GA.jar",
-        "D:/Users/eg/Documents/GitHub/MendixJavaPlayground/deployment/model/lib/userlib/opentelemetry-javaagent-2.0.0.jar",
+        "D:/Users/eg/Documents/GitHub/MendixJavaPlayground/deployment/model/lib/userlib/*",
       ],
       "cwd": "${workspaceFolder}/deployment",
       "mainClass": "com.mendix.container.boot.Main",
