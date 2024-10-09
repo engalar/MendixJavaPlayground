@@ -10,27 +10,30 @@
 package opentelemetry.actions;
 
 import java.util.Stack;
-
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.systemwideinterfaces.core.ICoreAction;
 import com.mendix.webui.CustomJavaAction;
 import opentelemetry.implement.SpanManager;
 
-public class createSpan extends CustomJavaAction<java.lang.String> {
+public class createSpan extends CustomJavaAction<java.lang.String>
+{
 	private final java.lang.String name_;
 	private final java.lang.String parentSpanId_;
 
 	public createSpan(
-			IContext context,
-			java.lang.String _name_,
-			java.lang.String _parentSpanId_) {
+		IContext context,
+		java.lang.String _name_,
+		java.lang.String _parentSpanId_
+	)
+	{
 		super(context);
 		this.name_ = _name_;
 		this.parentSpanId_ = _parentSpanId_;
 	}
 
 	@java.lang.Override
-	public java.lang.String executeAction() throws Exception {
+	public java.lang.String executeAction() throws Exception
+	{
 		// BEGIN USER CODE
 		String spanId = null;
 		String mfName = "";
@@ -56,11 +59,11 @@ public class createSpan extends CustomJavaAction<java.lang.String> {
 
 	/**
 	 * Returns a string representation of this action
-	 * 
 	 * @return a string representation of this action
 	 */
 	@java.lang.Override
-	public java.lang.String toString() {
+	public java.lang.String toString()
+	{
 		return "createSpan";
 	}
 
