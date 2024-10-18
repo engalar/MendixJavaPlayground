@@ -1,0 +1,69 @@
+#
+# ~/.m2ee/m2ee.yaml
+# user/application specific configuration
+#
+# All non-essential configuration settings have been omitted in this example
+# file. Refer to the full-documented-m2ee.yaml in the examples directory for a
+# full list of available options and explanation about them.
+#
+mxnode:
+  mxjar_repo: ["/opt/mendix/runtime/"]
+m2ee:
+  ApplicationRootUrl: http://mendix.top:8000/
+  custom_environment:
+    BUILDPACK_XTRACE: "true"
+  app_name: My Project Name
+  app_base: /home/eg/gh/MendixJavaPlayground/deployment/
+  # m2ee http admin interface and password
+  admin_port: 9000
+  admin_pass: Password1!1234
+  # mxruntime web interface port
+  runtime_port: 8000
+  # set to * if you want to have the public runtime port accessible from other
+  # hosts than localhost (Mendix >= 4.3.0)
+  runtime_listen_addresses: "*"
+  # custom java options, like -Xmx256m or -Djava.foo=bar
+  javaopts: [
+      "-Dfile.encoding=UTF-8",
+      # "-XX:MaxPermSize=128M",
+      # "-Xmx512M",
+      # "-Xms512M",
+      "-Djava.io.tmpdir=/home/eg/gh/MendixJavaPlayground/deployment/data/tmp",
+    ]
+  # file which will be read back by the m2ee log command to provide live logging
+  # info this is *not* a file m2ee-tools is going to write to, it is a hint
+  # about where to find the log which is written by the mendix application
+  # logfile: /path/to/your/favorite/logfile
+# logging:
+# - # example of file logging by the platform itself
+# name: FileSubscriber
+# type: file
+# autosubscribe: INFO
+# filename: /heme/eg/gh/MendixJavaPlayground/deployment/log/logFile
+# max_size: 10485760 # bytes(!!)
+# max_rotate: 7
+mxruntime:
+  # Database login credentials
+  DatabaseType: MySql #PostgreSQL
+  # The DatabaseHost contains the database hostname and optionally, also the TCP
+  # port number.  It's possible to use a plain IPv6 address by enclosing it in
+  # brackets, like: "[::1]:5432"
+  # DatabaseHost: "127.0.0.1:5432"
+  DatabaseHost: "127.0.0.1:3306"
+  DatabaseName: mendix
+  DatabaseUserName: mendix
+  DatabasePassword: mendix
+
+  MicroflowConstants:
+    # put microflow constants in here
+    Module.Constant: text
+    AnotherModule.AnotherConstant: bla
+
+  # ScheduledEventExecution can be set to ALL, NONE (default) or SPECIFIED
+  ScheduledEventExecution: NONE
+  # When using ScheduledEventExecution SPECIFIED, provide a list of actions to
+  # enable:
+  MyScheduledEvents:
+    - Module1.Event1
+    - Module2.Event2
+    - Module3.Event3

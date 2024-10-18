@@ -5,8 +5,8 @@
 /.mendix-cache/
 /.classpath
 /.project
-/usi uc1 poc.mpr.bak
-/usi uc1 poc.mpr.lock
+/*.mpr.bak
+/*.mpr.lock
 /modeler-merge-marker
 /project-settings.user.json
 /javasource/*/proxies/
@@ -15,8 +15,8 @@
 !/javascriptsource/**/node_modules/
 /nativemobile/builds/
 temp
-/usi_uc1_poc.mpr.bak
-/usi_uc1_poc.mpr.lock
-MendixJavaPlayground.mpr.lock
+/*.mpr.bak
+/*.mpr.lock
 .gradle
 build
+.settings
