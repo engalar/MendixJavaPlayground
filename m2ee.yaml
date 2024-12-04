@@ -1,11 +1,3 @@
-#
-# ~/.m2ee/m2ee.yaml
-# user/application specific configuration
-#
-# All non-essential configuration settings have been omitted in this example
-# file. Refer to the full-documented-m2ee.yaml in the examples directory for a
-# full list of available options and explanation about them.
-#
 mxnode:
   mxjar_repo: ["/opt/mendix/runtime/"]
 m2ee:
@@ -25,23 +17,22 @@ m2ee:
   # custom java options, like -Xmx256m or -Djava.foo=bar
   javaopts: [
       "-Dfile.encoding=UTF-8",
+      "-javaagent:/home/eg/gh/opentelemetry-java-instrumentation/examples/extension/build/libs/opentelemetry-javaagent.jar",
+      "-Dotel.exporter.otlp.endpoint=http://192.168.1.100:8080/",
       # "-XX:MaxPermSize=128M",
       # "-Xmx512M",
       # "-Xms512M",
       "-Djava.io.tmpdir=/home/eg/gh/MendixJavaPlayground/deployment/data/tmp",
     ]
-  # file which will be read back by the m2ee log command to provide live logging
-  # info this is *not* a file m2ee-tools is going to write to, it is a hint
-  # about where to find the log which is written by the mendix application
-  # logfile: /path/to/your/favorite/logfile
-# logging:
-# - # example of file logging by the platform itself
-# name: FileSubscriber
-# type: file
-# autosubscribe: INFO
-# filename: /heme/eg/gh/MendixJavaPlayground/deployment/log/logFile
-# max_size: 10485760 # bytes(!!)
-# max_rotate: 7
+  logfile: /home/eg/gh/MendixJavaPlayground/deployment/log/my_logfile
+#m2ee end
+logging:
+  - type: file
+    name: FileSubscriber
+    autosubscribe: INFO
+    filename: /home/eg/gh/MendixJavaPlayground/deployment/log/file_subscriber.log
+    max_size: 10485760
+    max_rotate: 7
 mxruntime:
   # Database login credentials
   DatabaseType: MySql #PostgreSQL
