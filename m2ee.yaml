@@ -17,7 +17,8 @@ m2ee:
   # custom java options, like -Xmx256m or -Djava.foo=bar
   javaopts: [
       "-Dfile.encoding=UTF-8",
-      "-javaagent:/home/eg/gh/opentelemetry-java-instrumentation/examples/extension/build/libs/opentelemetry-javaagent.jar",
+      "-javaagent:/home/eg/.gradle/caches/modules-2/files-2.1/io.opentelemetry.javaagent/opentelemetry-javaagent/2.11.0-SNAPSHOT/e69f2c3101f145414881d1a9ec71a7fa224a9764/opentelemetry-javaagent-2.11.0-SNAPSHOT.jar",
+      "-Dotel.javaagent.extensions=/home/eg/gh/opentelemetry-java-instrumentation/examples/extension/build/libs/opentelemetry-java-instrumentation-extension-demo-1.0-all.jar",
       "-Dotel.exporter.otlp.endpoint=http://192.168.1.100:8080/",
       # "-XX:MaxPermSize=128M",
       # "-Xmx512M",
